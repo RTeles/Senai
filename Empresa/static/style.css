@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgba(66, 37, 37, 0.711);
+    background-image: url("neo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgb(42, 42, 42);
+    border-radius: 12px;
+    box-shadow:0 4px 10px rgba(66, 37, 37, 0.711);
+}
+h1 {
+    text-align:center;
+    color: rgb(255, 255, 0)
+}
+h2 {
+    text-align: left;
+    color: rgb(228, 235, 28)
+}
+form {
+    display: flex;
+    flex-direction: column;  
+}
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+button, .botao-secundario {
+    background-color: rgb(61, 60, 60);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover, .botao-secundario:hover {
+    background-color: rgb(38, 240, 2);
+}
+.botao-secundario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Peças Cadastradas</title>
+    <link rel ="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="historico">
+        <h1> Histórico de Peças</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> Peça </th>
+                    <th> Nº SKU </th>
+                    <th> Quantidade em Estoque </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in dados %} {# itera sobre cada linha de dados #}
+                <tr>
+                    <td> {{row [0] }}</td> {# acessa o primeiro item da linha #}
+                    <td> {{row [1] }}</td>
+                    <td> {{row [2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a class="botao-secundario" href="/">Cadastrar Nova Peça</a>
+    </div>
+</body>
+</html>
